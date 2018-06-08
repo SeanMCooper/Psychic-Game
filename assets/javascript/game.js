@@ -21,6 +21,7 @@ document.getElementById("startButton").addEventListener("click", function(){
 
 // game function
 function beginGame() {
+    alert("I'm thinking of a letter, whats your guess!?")
     var turnsLeft = 8;
     var alreadyGuessed = [];
     gameRun = true;
