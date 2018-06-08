@@ -14,14 +14,16 @@ var playAgainMessage = "Would you like to play again? Press Start to begin!"
 document.getElementById("turnsLeft").textContent = turnsLeft;
 document.getElementById("playAgainMessage").textContent = "";
 document.getElementById("startButton").addEventListener("click", function(){
-    beginGame();
+    if (gameRun === false) {
+        beginGame();
+    }
 })
 
 // game function
 function beginGame() {
     var turnsLeft = 8;
     var alreadyGuessed = [];
-    var gameRun = true;
+    gameRun = true;
     document.getElementById("playAgainMessage").textContent = "";
     document.getElementById("guessedLetters").textContent = alreadyGuessed;
     document.getElementById("turnsLeft").textContent = turnsLeft;
