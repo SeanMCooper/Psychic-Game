@@ -1,0 +1,7 @@
+
+body { 
+        background-color: beige;
+}
+#myBorder {
+        margin: 75px; padding: 20px; background-color: firebrick; position: static;
+}
